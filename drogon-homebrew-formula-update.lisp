@@ -98,7 +98,7 @@ VERSION number."
   "Update Drogon at DROGON-REPOSITORY-PATH to Drogon VERSION. Patch
 the Homebrew formula at HOMEBREW-FORMULA-REPOSITORY-PATH. Then commit
 and push the changes to the latter repository."
-  (let* ((drogon-path (uiop:native-namestring drogon-repository-path))
+  (let ((drogon-path (uiop:native-namestring drogon-repository-path))
          (formula-path (uiop:native-namestring homebrew-formula-repository-path))
          (digest (drogon-digest version))
          (revision (trantor-revision version drogon-path)))
