@@ -44,6 +44,7 @@
   :license  "BSD 3-Clause"
   :version "0.0.1"
   :serial t
+  :export #:update
   :depends-on (#:cl-ppcre #:flexi-streams #:ironclad #:legit #:trivial-download #:uiop #:unix-opts)
   :components ((:file "package")
                (:file "drogon-homebrew-formula-update")))
